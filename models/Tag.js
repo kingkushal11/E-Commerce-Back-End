@@ -12,20 +12,8 @@ Tag.init(
       primaryKey: true,
       autoIncrement: true
     },
-    product_id: {
-      type: DataTypes.INTEGER,
-      references:{
-        model:"product",
-        key: "id",
-      }
-    },
-    product_id: {
-      type: DataTypes.INTEGER,
-      references:{
-        model:"tag",
-        key: "id",
-      }
-    // define columns
+    tag_name: {
+      type: DataTypes.STRING,
     },
     // define columns
   },
